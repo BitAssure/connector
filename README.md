@@ -42,7 +42,13 @@ put here.
 
 Add a connector in BitAssure under **Settings, Connectors**. The page there
 gives every step as a command to paste, for a Windows server, a Linux server
-or your own computer. The full guide is at
+or your own computer.
+
+Its settings go in `connector.properties`, next to `connector.cmd`. Each
+package has a `connector.properties.example` explaining every setting: copy
+it, then fill in `server` and `registration.code` from BitAssure and the
+sites it may open in `allowed.hosts`. In a Windows path use forward slashes
+(`C:/...`), because a single backslash means something else in that file. The full guide is at
 [bitassure.app/docs/connector](https://bitassure.app/docs/connector).
 
 ## Network
